@@ -9,12 +9,10 @@
 
 #define SS_PIN 0 
 #define RST_PIN 2 
-#define WIFI_SSID "Baap ko bol recharge karwaye"
-#define WIFI_PASSWORD "password"
-#define FIREBASE_HOST "rfid-src.firebaseio.com"
-#define FIREBASE_AUTH "i0MZfYlFTJAQoIwPFthm0miY50sOmfw2ONVLQVLG"
-
-
+#define WIFI_SSID "{{ connection name }}"
+#define WIFI_PASSWORD "{{ connection password }}"
+#define FIREBASE_HOST "{{ your firebase project host }}"
+#define FIREBASE_AUTH "{{ your firebase project auth code }}"
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 int statuss = 0;
